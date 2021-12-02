@@ -28,7 +28,7 @@ public class PetCase {
     @Column(name = "description", nullable = false)
     private String description;
 
-    @ManyToOne(cascade = CascadeType.MERGE)
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "pet_id")
     private Pet pet;
 

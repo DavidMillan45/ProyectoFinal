@@ -35,11 +35,11 @@ public class Pet {
     private String picture;
 
 
-    @OneToMany(mappedBy = "pet",fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "pet")
     private List<PetCase> Petscase = new ArrayList<>();
 
 
-    @OneToMany(mappedBy = "pet",fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "pet")
     private List<Visit> visits = new ArrayList<>();
 
     @ManyToOne

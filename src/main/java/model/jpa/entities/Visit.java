@@ -6,10 +6,6 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "visit") // Optional
-@NamedQueries({
-        @NamedQuery(name = "Visit.findAll",
-                query = "SELECT b FROM Visit b")
-})
 public class Visit {
 
     @Id
@@ -26,7 +22,7 @@ public class Visit {
     @Column(name = "description", nullable = false)
     private String description;
 
-    @ManyToOne()
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "pet_id")
     private Pet pet;
 
