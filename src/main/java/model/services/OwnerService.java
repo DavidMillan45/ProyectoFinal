@@ -1,9 +1,9 @@
 package model.services;
 
-import co.edu.unbosque.model.jpa.entities.Owner;
-import co.edu.unbosque.model.jpa.repositories.OwnerRepository;
-import co.edu.unbosque.model.jpa.repositories.OwnerRepositoryImpl;
-import co.edu.unbosque.model.resources.pojos.OwnerPojo;
+import model.jpa.entities.Owner;
+import model.jpa.repositories.OwnerRepository;
+import model.jpa.repositories.OwnerRepositoryImpl;
+import model.resources.pojos.OwnerPojo;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;

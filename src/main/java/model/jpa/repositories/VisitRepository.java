@@ -1,7 +1,7 @@
 package model.jpa.repositories;
 
 
-import co.edu.unbosque.model.jpa.entities.Visit;
+import model.jpa.entities.Visit;
 
 import java.util.List;
 import java.util.Optional;

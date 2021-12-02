@@ -1,8 +1,9 @@
 package model.resources;
 
-import co.edu.unbosque.model.resources.filters.Logged;
-import co.edu.unbosque.model.resources.pojos.OwnerPojo;
-import co.edu.unbosque.model.services.OwnerService;
+
+import model.resources.filters.Logged;
+import model.resources.pojos.OwnerPojo;
+import model.services.OwnerService;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;

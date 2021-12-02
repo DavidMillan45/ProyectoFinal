@@ -1,8 +1,8 @@
 package model.resources;
 
-import co.edu.unbosque.model.resources.filters.Logged;
-import co.edu.unbosque.model.resources.pojos.VetPojo;
-import co.edu.unbosque.model.services.VetService;
+import model.resources.filters.Logged;
+import model.resources.pojos.VetPojo;
+import model.services.VetService;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;

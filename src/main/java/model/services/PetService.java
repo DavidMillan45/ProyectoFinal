@@ -1,9 +1,10 @@
 package model.services;
 
-import co.edu.unbosque.model.jpa.entities.Pet;
-import co.edu.unbosque.model.jpa.repositories.PetRepository;
-import co.edu.unbosque.model.jpa.repositories.PetRepositoryImpl;
-import co.edu.unbosque.model.resources.pojos.PetPojo;
+
+import model.jpa.entities.Pet;
+import model.jpa.repositories.PetRepository;
+import model.jpa.repositories.PetRepositoryImpl;
+import model.resources.pojos.PetPojo;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -15,15 +16,15 @@ import java.util.List;
 @Stateless
 public class PetService {
 
-    PetRepository PetRepository;
+    PetRepository petRepository;
 
     public List<PetPojo> listPet() {
 
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("tutorial");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
-        PetRepository = new PetRepositoryImpl(entityManager);
-        List<Pet> pets = PetRepository.findAll();
+        petRepository = new PetRepositoryImpl(entityManager);
+        List<Pet> pets = petRepository.findAll();
 
         entityManager.close();
         entityManagerFactory.close();
@@ -52,10 +53,10 @@ public class PetService {
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("tutorial");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
-        PetRepository = new PetRepositoryImpl(entityManager);
+        petRepository = new PetRepositoryImpl(entityManager);
 
         Pet pet = new Pet(microchip, name, species, race, size, sex, picture);
-        Pet persistedPet = PetRepository.save(pet).get();
+        Pet persistedPet = petRepository.save(pet).get();
 
         entityManager.close();
         entityManagerFactory.close();
@@ -69,8 +70,8 @@ public class PetService {
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("tutorial");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
-        PetRepository = new PetRepositoryImpl(entityManager);
-        PetRepository.update(pet_id, name, species, race, size, sex, picture);
+        petRepository = new PetRepositoryImpl(entityManager);
+        petRepository.update(pet_id, name, species, race, size, sex, picture);
 
         entityManager.close();
         entityManagerFactory.close();
@@ -82,8 +83,8 @@ public class PetService {
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("tutorial");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
-        PetRepository = new PetRepositoryImpl(entityManager);
-        PetRepository.updateMicrochip(pet_id, microchip);
+        petRepository = new PetRepositoryImpl(entityManager);
+        petRepository.updateMicrochip(pet_id, microchip);
 
         entityManager.close();
         entityManagerFactory.close();

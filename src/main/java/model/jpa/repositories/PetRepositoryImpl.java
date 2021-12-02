@@ -1,6 +1,6 @@
 package model.jpa.repositories;
 
-import co.edu.unbosque.model.jpa.entities.Pet;
+import model.jpa.entities.Pet;
 
 import javax.persistence.EntityManager;
 import java.util.List;

@@ -1,11 +1,11 @@
 package model.services;
 
-import co.edu.unbosque.model.jpa.entities.Pet;
-import co.edu.unbosque.model.jpa.entities.PetCase;
-import co.edu.unbosque.model.jpa.repositories.PetCaseRepository;
-import co.edu.unbosque.model.jpa.repositories.PetCaseRepositoryImpl;
-import co.edu.unbosque.model.jpa.repositories.PetRepository;
-import co.edu.unbosque.model.jpa.repositories.PetRepositoryImpl;
+import model.jpa.entities.Pet;
+import model.jpa.entities.PetCase;
+import model.jpa.repositories.PetCaseRepository;
+import model.jpa.repositories.PetCaseRepositoryImpl;
+import model.jpa.repositories.PetRepository;
+import model.jpa.repositories.PetRepositoryImpl;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;

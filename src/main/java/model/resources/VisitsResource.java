@@ -1,8 +1,9 @@
 package model.resources;
 
-import co.edu.unbosque.model.resources.pojos.VisitPojo;
-import co.edu.unbosque.model.services.PetService;
-import co.edu.unbosque.model.services.VisitService;
+
+import model.resources.pojos.VisitPojo;
+import model.services.PetService;
+import model.services.VisitService;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;

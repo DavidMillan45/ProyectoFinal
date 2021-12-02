@@ -1,6 +1,6 @@
 package model.jpa.repositories;
 
-import co.edu.unbosque.model.jpa.entities.PetCase;
+import model.jpa.entities.PetCase;
 
 import java.util.List;
 import java.util.Optional;

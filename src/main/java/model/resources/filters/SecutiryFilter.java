@@ -1,6 +1,6 @@
 package model.resources.filters;
 
-import co.edu.unbosque.model.services.UserAppService;
+import model.services.UserAppService;
 
 import javax.ws.rs.container.ContainerRequestContext;
 import javax.ws.rs.container.ContainerRequestFilter;

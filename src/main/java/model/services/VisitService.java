@@ -1,13 +1,12 @@
 package model.services;
 
 
-
-import co.edu.unbosque.model.jpa.entities.Pet;
-import co.edu.unbosque.model.jpa.entities.Visit;
-import co.edu.unbosque.model.jpa.repositories.PetRepository;
-import co.edu.unbosque.model.jpa.repositories.PetRepositoryImpl;
-import co.edu.unbosque.model.jpa.repositories.VisitRepository;
-import co.edu.unbosque.model.jpa.repositories.VisitRepositoryImpl;
+import model.jpa.entities.Pet;
+import model.jpa.entities.Visit;
+import model.jpa.repositories.PetRepository;
+import model.jpa.repositories.PetRepositoryImpl;
+import model.jpa.repositories.VisitRepository;
+import model.jpa.repositories.VisitRepositoryImpl;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;

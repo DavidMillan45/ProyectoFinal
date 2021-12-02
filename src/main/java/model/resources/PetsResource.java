@@ -1,7 +1,8 @@
 package model.resources;
 
-import co.edu.unbosque.model.resources.pojos.PetPojo;
-import co.edu.unbosque.model.services.PetService;
+
+import model.resources.pojos.PetPojo;
+import model.services.PetService;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;

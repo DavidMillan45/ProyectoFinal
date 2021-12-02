@@ -1,9 +1,8 @@
 package model.services;
 
-
-import co.edu.unbosque.model.jpa.entities.UserApp;
-import co.edu.unbosque.model.jpa.repositories.UserAppRepository;
-import co.edu.unbosque.model.jpa.repositories.UserAppRepositoryImpl;
+import model.jpa.entities.UserApp;
+import model.jpa.repositories.UserAppRepository;
+import model.jpa.repositories.UserAppRepositoryImpl;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;

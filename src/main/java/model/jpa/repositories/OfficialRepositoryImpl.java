@@ -1,6 +1,6 @@
 package model.jpa.repositories;
 
-import co.edu.unbosque.model.jpa.entities.Official;
+import model.jpa.entities.Official;
 
 import javax.persistence.EntityManager;
 import java.util.List;

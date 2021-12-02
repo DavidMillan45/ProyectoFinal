@@ -1,11 +1,10 @@
 package model.services;
 
-
-import co.edu.unbosque.model.jpa.entities.Vet;
-import co.edu.unbosque.model.jpa.repositories.UserAppRepository;
-import co.edu.unbosque.model.jpa.repositories.VetRepository;
-import co.edu.unbosque.model.jpa.repositories.VetRepositoryImpl;
-import co.edu.unbosque.model.resources.pojos.VetPojo;
+import model.jpa.entities.Vet;
+import model.jpa.repositories.UserAppRepository;
+import model.jpa.repositories.VetRepository;
+import model.jpa.repositories.VetRepositoryImpl;
+import model.resources.pojos.VetPojo;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

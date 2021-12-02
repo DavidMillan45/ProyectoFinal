@@ -1,9 +1,10 @@
 package model.services;
 
-import co.edu.unbosque.model.jpa.entities.Official;
-import co.edu.unbosque.model.jpa.repositories.OfficialRepository;
-import co.edu.unbosque.model.jpa.repositories.OfficialRepositoryImpl;
-import co.edu.unbosque.model.resources.pojos.OfficialPojo;
+
+import model.jpa.entities.Official;
+import model.jpa.repositories.OfficialRepository;
+import model.jpa.repositories.OfficialRepositoryImpl;
+import model.resources.pojos.OfficialPojo;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
