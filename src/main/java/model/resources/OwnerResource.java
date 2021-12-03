@@ -31,6 +31,15 @@ public class OwnerResource {
         }
 
     }
+    @Path("/owners/{username}")
+
+    public Response modify(@PathParam("username") String username, OwnerPojo owner) {
+        //new UserAppService().updateUserApp(username, userApp.getEmail());
+        new OwnerService().updateOwner2(owner);
+        return Response.ok()
+                .entity(owner)
+                .build();
+    }
 
     @Logged
     @GET

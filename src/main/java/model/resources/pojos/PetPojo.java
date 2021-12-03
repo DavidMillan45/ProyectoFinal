@@ -12,6 +12,9 @@ public class PetPojo {
     private String picture;
     private String owner_id;
 
+    public PetPojo () {
+
+    }
     public PetPojo(Integer pet_id, String microchip, String name, String species, String race, String size, String sex, String picture, String owner_id) {
         this.pet_id = pet_id;
         this.microchip = microchip;

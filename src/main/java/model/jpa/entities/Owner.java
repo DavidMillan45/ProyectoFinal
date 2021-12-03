@@ -1,15 +1,13 @@
 package model.jpa.entities;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.PrimaryKeyJoinColumn;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "Owner")
 @PrimaryKeyJoinColumn
 public class Owner extends UserApp {
 
+    @GeneratedValue
     @Column(name = "person_id", nullable = false, unique = true)
     private String person_id;
 
@@ -25,7 +23,7 @@ public class Owner extends UserApp {
     public Owner() {
     }
 
-    public Owner(String username, String password, String email, String person_id, String name, String address, String neighborhood) {
+    public Owner(String username, String password, String email,String person_id,String name, String address, String neighborhood) {
         super(username, password, email, "owner");
         this.person_id = person_id;
         this.name = name;
@@ -34,13 +32,6 @@ public class Owner extends UserApp {
     }
 
 
-    public String getPerson_id() {
-        return person_id;
-    }
-
-    public void setPerson_id(String person_id) {
-        this.person_id = person_id;
-    }
 
     public String getName() {
         return name;
@@ -64,5 +55,13 @@ public class Owner extends UserApp {
 
     public void setNeighborhood(String neighborhood) {
         this.neighborhood = neighborhood;
+    }
+
+    public String getPerson_id() {
+        return person_id;
+    }
+
+    public void setPerson_id(String person_id) {
+        this.person_id = person_id;
     }
 }

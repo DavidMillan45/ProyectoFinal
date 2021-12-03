@@ -9,13 +9,16 @@ public class OwnerPojo {
     private String address;
     private String neighborhood;
 
+    public OwnerPojo() {
+    }
+
     public OwnerPojo(String username, String password, String email) {
         this.username = username;
         this.password = password;
         this.email = email;
     }
 
-    public OwnerPojo(String username, String password, String email, String person_id, String name, String address, String neighborhood) {
+    public OwnerPojo(String username, String password, String email,String person_id, String name, String address, String neighborhood) {
         this.username = username;
         this.password = password;
         this.email = email;
@@ -30,14 +33,6 @@ public class OwnerPojo {
 
     public void setUsername(String username) {
         this.username = username;
-    }
-
-    public String getPerson_id() {
-        return person_id;
-    }
-
-    public void setPerson_id(String person_id) {
-        this.person_id = person_id;
     }
 
     public String getName() {
@@ -83,5 +78,13 @@ public class OwnerPojo {
 
     public String getAddress() {
         return address;
+    }
+
+    public String getPerson_id() {
+        return person_id;
+    }
+
+    public void setPerson_id(String person_id) {
+        this.person_id = person_id;
     }
 }

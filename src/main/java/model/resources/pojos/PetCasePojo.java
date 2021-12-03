@@ -9,6 +9,9 @@ public class PetCasePojo {
     private String description;
     private Integer pet_id;
 
+    public PetCasePojo(){
+
+    }
     public PetCasePojo(Integer case_id, Date created_at, String type, String description, Integer pet_id) {
         this.case_id = case_id;
         this.created_at = created_at;

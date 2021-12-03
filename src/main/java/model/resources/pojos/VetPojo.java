@@ -9,6 +9,9 @@ public class VetPojo {
     private String address;
     private String neighborhood;
 
+    public VetPojo() {
+
+    }
     public VetPojo(String username, String password, String email) {
         this.username = username;
         this.password = password;
